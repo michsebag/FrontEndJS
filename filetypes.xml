@@ -1,0 +1,12 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <ignoreFiles list="*.hprof;*.orig;*.pyc;*.pyo;*.rbc;*.yarb;*~;.DS_Store;.git;.hg;.svn;CVS;__pycache__;_svn;vssver.scc;vssver2.scc;" />
+    <extensionMap>
+      <mapping ext="klib" type="ARCHIVE" />
+      <mapping pattern="InjectRandomIntObjectConfigurator" type="CLASS" />
+      <mapping pattern="InjectRandomObjectConfigurator" type="CLASS" />
+      <mapping pattern="r;kswgj" type="PLAIN_TEXT" />
+      <mapping pattern="IHaveADream" type="PLAIN_TEXT" />
+    </extensionMap>
+  </component>
+</application>
