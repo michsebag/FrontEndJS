@@ -1,0 +1,90 @@
+.container {
+    font-family: "Comic Sans MS";
+    margin: auto;
+    width: 1000px;
+    border: 10px solid hotpink;
+    border-color: green red blue yellow;
+    padding: 5% 5% 10%;
+
+}
+.subContainer{
+    margin:auto;
+    width: 900px;
+    border: 10px solid #374eff;
+}
+
+body{background: #889292
+}
+.megaBox{
+    display: flex;
+}
+
+.box1{
+    border: 10px solid springgreen;
+    /*float: left;*/
+    width: 50%;
+    display: flex;
+    background-color: #ff5cef;
+
+}
+.box2{
+    border: 10px solid springgreen;
+    /*float: left;*/
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #ff5cef;
+
+}
+.boxBottom{
+    border: 10px solid springgreen;
+    display: flex;
+    flex-direction : row;
+    background-color: DodgerBlue;
+    position: relative;
+}
+.imageBox{
+    margin-right: auto;
+    margin-left: auto;
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+.footer{
+    margin-top: 60%;
+    text-align: center;
+    font-family: "Comic Sans MS";
+    font-size: 40px;
+}
+.myHeader{
+    font-family: "Comic Sans MS";
+    font-size: 40px;
+}
+
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    /*top: 50%;*/
+    /*left: 50%;*/
+    transform: translate(-140%, 20%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    /*position: center;*/
+
+}
+.boxBottom:hover .imageBox {
+    opacity: 0.3;
+}
+
+.boxBottom:hover .middle {
+    opacity: 1;
+}
+.text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}

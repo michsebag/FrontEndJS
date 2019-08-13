@@ -1,0 +1,99 @@
+<html>
+
+
+<head>
+    <title>First app</title>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+
+
+    <script>
+
+
+        function model() {
+
+            var domTable = null;
+
+            var pokemons = [
+                {name: "Bulbasaur", number: "#001", type: "Grass, Poison"},
+                {name: "Ivysaur", number: "#002", type: "Grass, Poison"},
+                {name: "Venusaur", number: "#003", type: "Grass, Poison"},
+                {name: "Charmander", number: "#004", type: "Fire"},
+                {name: "Charmeleon", number: "#005", type: "Fire"},
+                {name: "Charizard", number: "#006", type: "Fire, Flying"},
+                {name: "Squirtle", number: "#007", type: "Water"},
+                {name: "Wartortle", number: "#008", type: "Water"},
+                {name: "Blastoise", number: "#009", type: "Water"},
+                {name: "Pikachu", number: "#025", type: "Electric"},
+                {name: "Raichu", number: "#026", type: "Electric"}
+            ];
+
+            this.init = function () {
+                domTable = document.getElementById("myTable");
+                printAllPokemons();
+            };
+
+
+            function printAllPokemons() {
+                pokemons.map(function (pokemon) {
+                    var domTr = document.createElement("tr");
+
+                    domTable.appendChild(domTr);
+
+                    for (var key in pokemon) {
+                        var value = pokemon[key];
+                        var domTd = document.createElement("td");
+                        domTd.innerText = value;
+                        domTr.appendChild(domTd);
+                        console.log(value);
+                        domTr.addEventListener('click', function () {
+                            //alert(pokemon["name"]);
+                            var allMessagesDiv = document.getElementById("allMessages");
+                            //var domDiv = document.createElement("div");
+                            //domDiv.innerHTML = pokemon["name"];
+                            allMessagesDiv.innerHTML = pokemon["name"];
+                        });
+                    }
+
+                });
+            }
+
+
+        }
+
+
+        window.onload = function () {
+            var model1 = new model();
+            model1.init();
+        }
+
+
+    </script>
+</head>
+<body>
+<div class="container">
+
+    <h1>Hello Trainer,</h1>
+
+    <button id="btn">click me</button>
+
+    <table id="myTable" ;style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Number</th>
+            <th>Type</th>
+        </tr>
+    </table>
+
+
+    <div id="allMessages">
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+

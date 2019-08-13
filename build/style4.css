@@ -1,0 +1,11 @@
+.container {
+    font-family: "Comic Sans MS";
+    margin: auto;
+    width: 1000px;
+    border: 10px solid hotpink;
+    border-color: green red blue yellow;
+    padding: 5% 5% 10%;
+
+}
+
+body{background: #889292}

@@ -1,0 +1,43 @@
+<html>
+
+
+<head>
+    <title>First app</title>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style4.css"></link>
+
+
+    <script>
+        function showPokemon() {
+            var listElements = document.getElementById("PokemonList");
+            var index = listElements.selectedIndex;
+            var value = listElements.options[index].value;
+            var imageBox = document.getElementById("imageBox");
+            imageBox.src = 'Pictures/' + value;
+            console.log(value);
+
+        }
+    </script>
+</head>
+<body>
+<div class="container">
+    <div class="listBox">
+        <select id="PokemonList" onchange="showPokemon();">
+            <option value="001.png">Bulbasur</option>
+            <option value="004.png">Charmander</option>
+            <option value="007.png">Squirtle</option>
+            <option value="025.png">Pikachu</option>
+        </select>
+    </div>
+    <div class="boxBottom">
+        <img id="imageBox" src="Pictures/004.png" height="100" width="100"/>
+    </div>
+</div>
+
+
+</body>
+</html>
+
+
+

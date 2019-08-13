@@ -1,0 +1,54 @@
+
+#allMessages{
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Comic Sans MS";
+    border-collapse: collapse;
+
+}
+
+tr:hover{
+    background-color: red;
+}
+h1 {
+    color: green;
+    font-size: 50px;
+    font-family: "Comic Sans MS";
+    text-align: left;
+}
+
+#myTable, th, td {
+    font-family: "Comic Sans MS";
+    margin: auto;
+    border-collapse: collapse;
+    border: 1px solid black;
+
+}
+
+
+
+th {
+    background-color: #4CAF50;
+    color: black;
+}
+
+
+.container {
+    margin: auto;
+    width: 1000px;
+    border: 1px solid hotpink;
+    text-align: center;
+}
+
+body{background: azure}
+
+#btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

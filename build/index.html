@@ -1,0 +1,103 @@
+<html>
+
+
+<head>
+    <title>First app</title>
+
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="style.css"></link>
+
+
+    <script>
+
+        function model() {
+            var name = "foo";
+            this.getName = function () {
+                return name;
+            }
+        }
+        model.prototype.lastNam="ssss";
+
+
+        var a = 0;
+
+        function func1() {
+            var a = 1;
+
+            function func2() {
+                alert(a);
+            }
+        }
+
+
+        var firstNames = ["Bulbasaur", "Charmander", "Squirtle"];
+        var numbers= ["#001", "#004", "#007"];
+        var types = ["Grass", "Fire", "Water"];
+
+
+        window.onload = function () {
+            var counter = 0;
+            document.getElementById("btn").addEventListener('click', function () {
+                var node = document.createElement("div");                 // Create a <li> node
+                var textnode = document.createTextNode("new message " + counter++);         // Create a text node
+                node.appendChild(textnode);
+                document.getElementById("allMessages").appendChild(node);
+            });
+
+            var elements = document.getElementById("myTable").getElementsByTagName("tr");
+            for (var i = 1 ; i < elements.length; i++){
+                var currentTD = elements[i].getElementsByTagName("td")[0].innerHTML;
+                console.log(currentTD)
+                console.log(elements[i])
+                elements[i].addEventListener('click', function (e) {
+                    console.log(e.target.parentNode.children[0].innerText)
+                        var allMessagesDiv = document.getElementById("allMessages");
+
+                        var textnode = document.createTextNode(e.target.parentNode.children[0].innerText +" ");// Create a <li> node
+                    allMessagesDiv.appendChild(textnode)// Create a <li> node
+                        // var textnode = document.createTextNode(msg);         // Create a text node
+                        // node.appendChild(textnode);
+                        // document.getElementById("allMessages").appendChild(node);
+                    });
+            }
+        };
+    </script>
+</head>
+<body>
+
+
+<button id="btn">click me</button>
+<table id="myTable";style="width:100%">
+    <tr>
+        <th>Name</th>
+        <th>Number</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Bulbasaur</td>
+        <td>#001</td>
+        <td>Grass</td>
+    </tr>
+    <tr>
+        <td>Charmander</td>
+        <td>#004</td>
+        <td>Fire</td>
+    </tr>
+    <tr>
+        <td>Squirtle</td>
+        <td>#007</td>
+        <td>Water</td>
+    </tr>
+</table>
+
+<h1>Hello Miki........</h1>
+
+<div id="allMessages">
+</div>
+
+
+</body>
+</html>
+
+
+
