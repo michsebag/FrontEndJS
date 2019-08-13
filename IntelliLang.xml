@@ -1,0 +1,8 @@
+<application>
+  <component name="LanguageInjectionConfiguration">
+    <injection language="spring-bean-name" injector-id="xml">
+      <display-name>beans</display-name>
+      <place><![CDATA[xmlTag().withLocalName(string().equalTo("beans")).withNamespace(string().equalTo("http://www.springframework.org/schema/beans"))]]></place>
+    </injection>
+  </component>
+</application>
