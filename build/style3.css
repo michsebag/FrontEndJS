@@ -65,13 +65,13 @@ body{background: #889292
 }
 
 .middle {
-    transition: .5s ease;
+    /*transition: .5s ease;*/
     opacity: 0;
     /*top: 50%;*/
     /*left: 50%;*/
-    transform: translate(-140%, 20%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translate(-130px, 70px);
+    /*-ms-transform: translate(-50%, -50%);*/
+    /*text-align: center;*/
     /*position: center;*/
 
 }
@@ -86,5 +86,5 @@ body{background: #889292
     background-color: #4CAF50;
     color: white;
     font-size: 16px;
-    padding: 16px 32px;
+    /*padding: 16px 32px;*/
 }
