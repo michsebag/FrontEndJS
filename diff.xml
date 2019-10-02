@@ -2,17 +2,17 @@
   <component name="DiffManager">
     <enableFiles value="true" />
     <enableMerge value="true" />
-    <filesTool value="C:\Program Files\Beyond Compare 4\BComp.exe" newValue="C:\Program Files\Beyond Compare 4\BComp.exe" />
-    <mergeTool value="C:\Program Files\Beyond Compare 4\BComp.exe" newValue="C:\Program Files\Beyond Compare 4\BComp.exe" />
-    <mergeToolParameters value="%1 %2 %3 %4" />
+    <filesTool value="C:\Program Files\KDiff3\kdiff3.exe" newValue="C:\Program Files\KDiff3\kdiff3.exe" />
+    <mergeTool value="C:\Program Files\KDiff3\kdiff3.exe" newValue="C:\Program Files\KDiff3\kdiff3.exe" />
+    <mergeToolParameters value="%3 %2 %1 -o %4 " />
   </component>
   <component name="ExternalDiffSettings">
-    <option name="DIFF_ENABLED" value="false" />
+    <option name="DIFF_ENABLED" value="true" />
     <option name="DIFF_DEFAULT" value="true" />
-    <option name="DIFF_EXE_PATH" value="C:\Program Files\Beyond Compare 4\BComp.exe" />
+    <option name="DIFF_EXE_PATH" value="C:\Program Files\KDiff3\kdiff3.exe" />
     <option name="DIFF_PARAMETERS" value="%1 %2 %3" />
     <option name="MERGE_ENABLED" value="true" />
-    <option name="MERGE_EXE_PATH" value="C:\Program Files\Beyond Compare 4\BComp.exe" />
-    <option name="MERGE_PARAMETERS" value="%1 %2 %3 %4" />
+    <option name="MERGE_EXE_PATH" value="C:\Program Files\KDiff3\kdiff3.exe" />
+    <option name="MERGE_PARAMETERS" value="%3 %2 %1 -o %4 " />
   </component>
 </application>
