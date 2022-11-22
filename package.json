@@ -24,7 +24,7 @@
     "grunt-htmlhint": "^0.9.13",
     "grunt-open": "^0.2.3",
     "grunt-karma": "^0.12.2",
-    "karma": "^1.6.0",
+    "karma": "^6.4.1",
     "grunt-spritesmith": "^6.4.0"
   }
 }
